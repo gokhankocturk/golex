@@ -2,16 +2,20 @@
 #' 
 #' @param request Internal parameter for `{shiny}`. 
 #'     DO NOT REMOVE.
-#' @import shiny
+#' @import shiny shinydashboard
 #' @noRd
 app_ui <- function(request) {
   tagList(
     # Leave this function for adding external resources
     golem_add_external_resources(),
     # Your application UI logic 
-    fluidPage(
-      h1("golex")
-    )
+    header <- dashboardHeader(title = "gokhanin programi"),
+    sidebar <- dashboardSidebar(width = 300,
+                                h1("Gokhan Kocturk")),
+    body <- dashboardBody(
+      sliderInput("kaydir", "KAYDIR", min = 1, max = 100, value = 50)
+    ),
+    ui <- dashboardPage(header, sidebar, body)
   )
 }
 
