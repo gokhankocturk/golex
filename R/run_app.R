@@ -5,6 +5,7 @@
 #' @inheritParams shiny::shinyApp
 #'
 #' @export
+#' @import shinydashboard
 #' @importFrom shiny shinyApp
 #' @importFrom golem with_golem_options 
 run_app <- function(
@@ -19,8 +20,8 @@ run_app <- function(
       ui = app_ui,
       server = app_server,
       onStart = onStart,
-      options = options, 
-      enableBookmarking = enableBookmarking, 
+      options = options,
+      enableBookmarking = enableBookmarking,
       uiPattern = uiPattern
     ), 
     golem_opts = list(...)

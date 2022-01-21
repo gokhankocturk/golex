@@ -2,21 +2,34 @@
 #' 
 #' @param request Internal parameter for `{shiny}`. 
 #'     DO NOT REMOVE.
-#' @import shiny shinydashboard
+#' @import shiny 
+#' @import shinydashboard
 #' @noRd
 app_ui <- function(request) {
   tagList(
     # Leave this function for adding external resources
     golem_add_external_resources(),
-    # Your application UI logic 
+    
+    # YONTEM 1: Your application UI logic
     header <- dashboardHeader(title = "gokhanin programi"),
-    sidebar <- dashboardSidebar(width = 300,
-                                h1("Gokhan Kocturk")),
+    sidebar <- dashboardSidebar(width = 300, h1("Gokhan Kocturk")),
     body <- dashboardBody(
-      sliderInput("kaydir", "KAYDIR", min = 1, max = 100, value = 50)
-    ),
+            sliderInput("kaydir", "KAYDIR", min = 1, max = 100, value = 50),
+            textOutput("yazdir")
+          ),
     ui <- dashboardPage(header, sidebar, body)
+    
+    # YONTEM 2: Your application UI logic 
+    # dashboardPage(
+    #   dashboardHeader(title = "gokhanin programi"),
+    #   dashboardSidebar(width = 300, h1("Gokhan Kocturk")),
+    #   dashboardBody(
+    #     sliderInput("kaydir", "KAYDIR", min = 1, max = 100, value = 50),
+    #     textOutput("yazdir")
+    #   )
+    # )
   )
+  return(ui) # YONTEM 1'e ait, YONTEM 2'de yok bu satir.
 }
 
 #' Add external Resources to the Application
@@ -24,11 +37,10 @@ app_ui <- function(request) {
 #' This function is internally used to add external 
 #' resources inside the Shiny application. 
 #' 
-#' @import shiny
+#' @import shiny 
 #' @importFrom golem add_resource_path activate_js favicon bundle_resources
 #' @noRd
 golem_add_external_resources <- function(){
-  
   add_resource_path(
     'www', app_sys('app/www')
   )
