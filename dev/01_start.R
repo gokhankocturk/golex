@@ -41,6 +41,7 @@ usethis::use_news_md( open = FALSE )
 
 ## Use git ----
 usethis::use_git()
+usethis::use_github()
 
 ## Init Testing Infrastructure ----
 ## Create a template for tests
@@ -51,7 +52,7 @@ golem::use_recommended_deps()
 
 ## Favicon ----
 # If you want to change the favicon (default is golem's one)
-golem::use_favicon() # path = "path/to/ico". Can be an online file. 
+golem::use_favicon("C:/Users/LENOVO/Desktop/aa.ico") # path = "path/to/ico". Can be an online file. 
 golem::remove_favicon()
 
 ## Add helper functions ----
