@@ -1,15 +1,21 @@
-#' The application User-Interface
-#' 
-#' @param request Internal parameter for `{shiny}`. 
-#'     DO NOT REMOVE.
+#' The application User-Interface#' 
+#' @param request Internal parameter for `{shiny}`. DO NOT REMOVE 
 #' @import shiny 
 #' @import shinydashboard
 #' @noRd
 app_ui <- function(request) {
+  # YONTEM 3: Your application UI logic
+  # header <- dashboardHeader(title = "gokhanin programi")
+  # sidebar <- dashboardSidebar(width = 300, h1("Gokhan Kocturk"))
+  # body <- dashboardBody(
+  #   sliderInput("kaydir", "KAYDIR", min = 10, max = 100, value = 50),
+  #   textOutput("yazdir")
+  # )
+  # ui <- dashboardPage(header, sidebar, body)
   tagList(
     # Leave this function for adding external resources
     golem_add_external_resources(),
-    
+
     # YONTEM 1: Your application UI logic
     header <- dashboardHeader(title = "gokhanin programi"),
     sidebar <- dashboardSidebar(width = 300, h1("Gokhan Kocturk")),
@@ -29,7 +35,7 @@ app_ui <- function(request) {
     #   )
     # )
   )
-  return(ui) # YONTEM 1'e ait, YONTEM 2'de yok bu satir.
+  return(ui) # YONTEM 1'e ait, YONTEM 2 ve YONTEM 3'te yok bu satir.
 }
 
 #' Add external Resources to the Application

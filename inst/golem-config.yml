@@ -2,7 +2,11 @@ default:
   golem_name: golex
   golem_version: 0.0.0.9000
   app_prod: no
+  MONGODBURL: localhost
 production:
   app_prod: yes
+  MONGODBURL: 0.0.0.0
 dev:
-  golem_wd: !expr here::here()
+  golem_wd: C:/Users/LENOVO/Desktop/golex
+
+
