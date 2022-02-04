@@ -17,11 +17,12 @@ app_ui <- function(request) {
     golem_add_external_resources(),
 
     # YONTEM 1: Your application UI logic
-    header <- dashboardHeader(title = "gokhanin programi"),
+    header <- dashboardHeader(title = "GOKHANIN PROGRAMI"),
     sidebar <- dashboardSidebar(width = 300, h1("Gokhan Kocturk")),
     body <- dashboardBody(
-            sliderInput("kaydir", "KAYDIR", min = 1, max = 100, value = 50),
-            textOutput("yazdir")
+            sliderInput("kaydir", "KAYDIRRR", min = 1, max = 88, value = 5),
+            textOutput("yazdir"),
+            mod_name_of_module1_ui("test_icin_yazildi")
           ),
     ui <- dashboardPage(header, sidebar, body)
     

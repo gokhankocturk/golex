@@ -1,3 +1,5 @@
+^renv$
+^renv\.lock$
 ^.*\.Rproj$
 ^\.Rproj\.user$
 ^data-raw$
@@ -9,3 +11,8 @@ $run_dev.*
 ^CODE_OF_CONDUCT\.md$
 ^app\.R$
 ^rsconnect$
+^codecov\.yml$
+^\.travis\.yml$
+^appveyor\.yml$
+^Dockerfile$
+^\.dockerignore$

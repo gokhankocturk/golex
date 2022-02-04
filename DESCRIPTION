@@ -21,7 +21,8 @@ URL: https://github.com/gokhankocturk/golex
 BugReports: https://github.com/gokhankocturk/golex/issues
 Suggests: 
     testthat (>= 3.0.0),
-    spelling
+    spelling,
+    covr
 Config/testthat/edition: 3
 Language: en-US
 Depends: 

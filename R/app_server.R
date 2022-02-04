@@ -10,6 +10,7 @@ app_server <- function( input, output, session ) {
     output$yazdir <- renderText({
       input$kaydir
     })
+    mod_name_of_module1_server("test_icin_yazildi")
 }
 
 

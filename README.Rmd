@@ -17,6 +17,9 @@ knitr::opts_chunk$set(
 
 <!-- badges: start -->
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+[![Codecov test coverage](https://codecov.io/gh/gokhankocturk/golex/branch/master/graph/badge.svg)](https://codecov.io/gh/gokhankocturk/golex?branch=master)
+[![Travis build status](https://travis-ci.com/gokhankocturk/golex.svg?branch=master)](https://travis-ci.com/gokhankocturk/golex)
+[![AppVeyor build status](https://ci.appveyor.com/api/projects/status/github/gokhankocturk/golex?branch=master&svg=true)](https://ci.appveyor.com/project/gokhankocturk/golex)
 <!-- badges: end -->
 
 The goal of golex is to ...

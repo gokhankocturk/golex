@@ -1,0 +1,15 @@
+{
+  "input": {
+    "kaydir": 74,
+    "sidebarCollapsed": false,
+    "sidebarItemExpanded": null,
+    "test_icin_yazildi-sayisec": 49
+  },
+  "output": {
+    "test_icin_yazildi-sayiyazdir": "27195",
+    "yazdir": "74"
+  },
+  "export": {
+
+  }
+}

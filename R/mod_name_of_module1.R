@@ -10,7 +10,8 @@
 mod_name_of_module1_ui <- function(id){
   ns <- NS(id)
   tagList(
- 
+    sliderInput(ns("sayisec"), "Sayi Sec", min = 1, max = 100, value = 10),
+    textOutput(ns("sayiyazdir"))
   )
 }
     
@@ -20,7 +21,10 @@ mod_name_of_module1_ui <- function(id){
 mod_name_of_module1_server <- function(id){
   moduleServer( id, function(input, output, session){
     ns <- session$ns
- 
+    aaa <- reactiveValues(value = NULL)
+    output$sayiyazdir <- renderText({
+      aaa$value <- input$sayisec * 555
+    })
   })
 }
     
